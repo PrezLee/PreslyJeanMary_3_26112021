@@ -1,0 +1,74 @@
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: $res--margin-top;
+    width: $width--mobile;
+    height: auto;
+    background-color: darken($color: $alt--color, $amount: 3%);
+
+    &__heading {
+        padding-top: $padding--basic + 5;
+        margin: $margin--basic 0 $margin--basic $margin--neg - 18;
+    }
+
+    &__cell {
+        // @include resOutter--shadow;
+        @include res--border-radius-top;
+        @include res--border-radius-bottom;
+        margin-bottom: $cellMargin--bottom;
+
+        img {
+            width: $res--img-width;
+            height: $res--img-height;
+            background-size: 100% 100%;
+            @include res--border-radius-top;
+            object-position: left center;
+            object-fit: cover;
+        }
+
+        &--title {
+            margin-top: $res--title-margin-top;
+            padding-top: $padding--small + 3;
+            padding-left: $padding--small;
+            padding-bottom: $padding--small - 25;
+            background-color: $alt--color;
+            @include res--border-radius-bottom;
+            @include resOutter--shadow;
+
+            > p {
+                font-weight: $font--extra-Bold;
+                margin-bottom: $res--title-margin-bot;
+            }
+
+            > h2 {
+                margin-bottom: $res--title-margin-bot;
+            }
+        }
+
+        &--heart i {
+            @include heart--position;
+            font-size: $font--medium - 0.2;
+        }
+
+        &.new {
+            position: relative;
+        }
+
+        &.new::before {
+            content: "Nouveau";
+            display: grid;
+            place-content: center;
+            width: $vignette--width;
+            height: $vignette--height;
+            border-radius: $vignette--new-radius;
+            background-color: $vignette--new-bgc;
+            @include vignetteOutter--shadow;
+            @include vignette--position;
+            font-size: $font--xsmall;
+            font-weight: $font--bold;
+            color: darken($color: $vignette--new-bgc, $amount: 50%);
+            position: absolute;
+        }
+    }
+}

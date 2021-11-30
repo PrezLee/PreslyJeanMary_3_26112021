@@ -1,0 +1,71 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: $width--mobile;
+    height: auto;
+
+    &__logo--text {
+        font-family: $logo_title-font, cursive;
+        font-size: 2rem;
+    }
+
+    &__location{
+        display: flex;
+        margin-top: 5px;
+        width: $width--mobile;
+
+        > input {
+            background-color: darken($color: $alt--color, $amount: 8%);
+            border: 0;
+            @include inner--shadow;
+            width: 100%;
+            height: 50px;
+            padding-left: 130px;
+            justify-content: center;
+            font-family: $body--font;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        > i {
+            position: absolute;
+            left: 100px;
+            top: 70px;
+            font-size: 1rem;
+            z-index: 999;
+        }
+
+    }
+    &__explore {
+        width: 100%;
+        height: 287px;
+        padding-top: $padding--basic;
+        background-color: darken($color: $alt--color, $amount: 3%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        &--heading {
+            margin-top: $margin--basic;
+        }
+        &--cta {
+            margin-top: $margin--basic;
+            // @include outter--shadow;
+        }
+        &--btn {
+            font-family: $body--font;
+            font-weight: $font--bold;
+            font-size: $font--xsmall;
+            letter-spacing: $letter--spacing;
+            color: $alt--color;
+            @include main-gradient;
+            @include outter--shadow;
+            padding: $padding--mid;
+            border: 0;
+            border-radius: $radius--rounded;
+            cursor: pointer;
+        }
+    }
+}

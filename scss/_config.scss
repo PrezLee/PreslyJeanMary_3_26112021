@@ -1,0 +1,179 @@
+
+//  COLORS 
+$alt--color: #FFFFFF;
+$alt--color-dark: rgb(0, 0, 0);
+
+$primary--color: #9356DC;
+$secondary--color: #FF79DA;
+$tertiary--color: #99E2D0;
+
+//  GRADIENTS
+@mixin main-gradient{
+    background: linear-gradient(180deg, rgba(255,3,185,0.5) 0%, rgba(147,86,220,1) 100%);
+}
+
+//  INNER SHADOWS
+@mixin inner--shadow {
+    box-shadow: inset 0 3px 3px darken($color: $alt--color, $amount: 20%);
+}
+
+//  OUTTER SHADOWS
+@mixin outter--shadow {
+    box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 25%);
+}
+
+//  CELL OUTTER SHADOWS
+@mixin cellOutter--shadow {
+    box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 15%);
+}
+
+// WIDTH SIZES
+$width--mobile: 375px;
+
+// FONT-FAMILIES
+$logo_title-font: 'Shrikhand';
+$body--font: 'Roboto';
+
+//  FONT WEIGHTS
+$font--basic: 300;
+$font--bold: 500;
+$font--extra-Bold: 700;
+
+//  FONT SIZES
+$font--xxsmall: 0.85rem;
+$font--xsmall: 0.95rem;
+$font--small: 1rem;
+$font--medium: 1.5rem;
+
+//  LETTERS SPACING
+$letter--spacing: .07rem;
+
+//  MARGINS
+$margin--basic: 20px;
+$margin--neg: -200px;
+
+
+//  PADDINGS
+$padding--xsmall: 5px;
+$padding--small: 10px;
+$padding--mid: 17px;
+$padding--basic: 20px;
+
+$padding--cell: 20px;
+
+//  RADIUS
+$radius--rounded: 28px;
+$radius--squared: 15px;
+$radius--cellNumber: 50px;
+
+//  CELL MARGIN BOTTOM
+$cellMargin--bottom: 25px;
+
+//  CELL ICONS POSITIONS
+$cellTitle--top: -20px;
+$cellTitle--left: 35px;
+
+//  CELL ICON SIZE
+$icon--size: 1.2rem;
+
+//  CELL WIDTH
+$cell--width: 325px;
+$cellNumber--width: 25px;
+$cellNumber--height: 25px;
+
+//  CELL NUMBER POSITION
+$cellNumber--top: -22px;
+$cellNumber--left: -30px;
+
+//  RESTAURANTS MARGINS
+$res--margin-top: 40px;
+$res--title-margin-top: -3px;
+$res--title-margin-bot: 5px;
+
+//  RESTAURANTS IMAGE SIZES
+$res--img-width: 325px;
+$res--img-height: 180px;
+
+//  RESTAURANTS VIGNETTE NEW
+$vignette--new-radius: 4px;
+$vignette--new-bgc: $tertiary--color;
+$vignette--width: 93px;
+$vignette--height: 30px;
+$vignette--margin-top: 1rem;
+$vignette--margin-left: 13.5rem;
+
+//  RESTAURANTS HEART POSITION
+@mixin heart--position {
+    position: relative;
+    top: -30px;
+    left: 275px;
+}
+
+//  RESTAURANTS IMAGE NEW VIGNETTE POSITION
+@mixin vignette--position {
+    margin-top: $vignette--margin-top;
+    margin-left: $vignette--margin-left;
+} 
+    
+//  RESTAURANTS OUTTER SHADOWS
+@mixin resOutter--shadow {
+    // box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 90%);
+    box-shadow: 0 5px 10px darken($color: $alt--color, $amount: 10%);
+}
+@mixin vignetteOutter--shadow {
+    // box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 90%);
+    box-shadow: -90deg 5px 10px lighten($color: $alt--color-dark, $amount: 50%);
+}
+
+
+//  RESTAURANTS CELL BORDERS
+@mixin res--border-radius-top {
+    border-radius: 20px 20px 0 0;
+}
+@mixin res--border-radius-bottom {
+    border-radius: 0 0 20px 20px;
+}
+
+// FOOTER PADDINGS & MARGINS
+$footer--padding-20: 20px;
+$footer--padding-30: 30px;
+$footer--left-space: 10px;
+
+@mixin footer--padding {
+    padding-top: $footer--padding-20;
+    padding-left: $footer--padding-30;
+    padding-bottom: $footer--padding-20;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: $body--font, sans-serif;
+    width: 100vh;
+    height: 100vh;
+    // display: flex;
+    // flex-direction: column;
+    overflow-x: hidden;
+ }
+
+ h1 {
+     font-weight: $font--extra-Bold;
+     font-size: $font--medium;
+ }
+ h2 {
+     font-weight: $font--basic;
+     font-size: $font--small;
+ }
+
+ a {
+     text-decoration: none;
+     color: $alt--color-dark;
+ }
+
+ li {
+     list-style: none;
+ }
