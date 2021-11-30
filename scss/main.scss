@@ -2,34 +2,4 @@
 @import './header';
 @import './how';
 @import './restaurants';
-
-.footer {
-    // display: block;
-    width: $width--mobile;
-    background-color: lighten($color: $alt--color-dark, $amount: 20%);
-    color: $alt--color;
-    @include footer--padding;
-
-    &__heading {
-        font-family: $logo_title-font;
-        font-size: $font--medium - 0.3;
-        margin-bottom: $cellMargin--bottom - 5;
-    }
-
-   &__links {
-       display: flex;
-       flex-direction: column;
-        > a {
-            color: $alt--color;
-        }
-   }
-
-    &__link {
-        font-family: $body--font;
-        margin-bottom: $cellMargin--bottom - 20;
-
-        &--space {
-            margin-left: $footer--left-space;
-        }
-    }
-}
+@import './footer';

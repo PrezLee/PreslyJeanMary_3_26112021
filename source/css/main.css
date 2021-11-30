@@ -326,4 +326,8 @@ li {
 .footer__link--space {
   margin-left: 10px;
 }
+
+.footer__link--space.first {
+  margin-left: 16px;
+}
 /*# sourceMappingURL=main.css.map */
