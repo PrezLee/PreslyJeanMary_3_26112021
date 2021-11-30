@@ -70,5 +70,8 @@
             color: darken($color: $vignette--new-bgc, $amount: 50%);
             position: absolute;
         }
+        &.last {
+            margin-bottom: $res--lastCell-margin-bot;
+        }
     }
 }
