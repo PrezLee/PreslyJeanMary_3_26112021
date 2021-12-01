@@ -108,6 +108,7 @@ $vignette--height: 30px;
 $vignette--margin-top: 1rem;
 $vignette--margin-left: 13.5rem;
 
+
 //  RESTAURANTS HEART POSITION
 @mixin heart--position {
     position: relative;
@@ -154,6 +155,12 @@ $vignette--margin-left: 13.5rem;
     align-items: center;
     width: $width--mobile;
     height: auto;
+}
+
+//  MENUS HEADER IMAGE
+@mixin menus--header-img {
+    width: $width--mobile;
+    height: 300px;
 }
 
 // MENUS HEADING HEART
