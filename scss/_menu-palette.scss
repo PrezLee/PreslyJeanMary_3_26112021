@@ -1,6 +1,7 @@
 .menus {
     @include flex--column-mobile;
-    background-image: url("/source/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    // background-image: url("/source/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    background: url("/source/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
     background-size: $menu--img-width;
     background-repeat: no-repeat;    
 
