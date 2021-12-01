@@ -1,0 +1,90 @@
+.menus {
+    @include flex--column-mobile;
+    background-image: url("/source/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    background-size: $menu--img-width;
+    background-repeat: no-repeat;    
+
+    &__content{
+        @include flex--column-mobile;
+        @include menus--top-border;
+        background-color: darken($color: $alt--color, $amount: 3%);
+    }
+
+    &__heading {
+        position: relative;
+        padding-top: $padding--basic - 10;
+        margin: $margin--basic 0 $margin--basic $margin--neg + 60;
+
+        &--title {
+            font-family: $logo_title-font;
+            font-size: 1.5rem;
+        }
+
+        &--heart {
+            @include menus--heading-heart;
+        }
+    }
+
+    &__cells {
+        margin-bottom: 20px;
+    }
+    &__cells--heading {
+        
+        text-transform: uppercase;
+        font-weight: $font--basic;
+        font-size: $font--small;
+        padding-bottom: 7px;
+        margin-bottom: 10px;
+
+        &::after {
+            @include menus--sub-bar;
+        }
+    }
+
+    &__cell {
+        position: relative;
+        width: $cell--width;
+        padding: $padding--cell - 5;
+        background-color: $alt--color;
+        border-radius: $radius--squared;
+        margin-bottom: $cellMargin--bottom;
+        @include cellOutter--shadow;
+
+        &--title {
+            // padding-top: 15px;
+            // margin-top: 5px;
+            margin-left: $cellTitle--left - 15; 
+            
+            > i {
+                color: darken($color: $alt--color, $amount: 50%);
+                font-size: $icon--size;
+                &.fa-store {
+                    color: $primary--color;
+                }
+            }
+
+            > p {
+                font-weight: $font--extra-Bold;
+                margin-left: $cellTitle--left - 55;
+                margin-top: $cellTitle--top + 20;
+            }
+
+            > h4 {
+                font-size: $font--xxsmall;
+                font-weight: $font--basic;
+                margin-left: $cellTitle--left - 55;
+                margin-top: $cellTitle--top + 25;
+            }
+        }
+        &--price {
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+        }
+    }
+    &__order--btn {
+        @include cta--btn;
+        padding: 15px 50px;
+        margin-bottom: 70px;
+    }
+}

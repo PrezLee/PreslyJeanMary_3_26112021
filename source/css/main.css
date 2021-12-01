@@ -51,6 +51,11 @@ li {
   font-size: 2rem;
 }
 
+.header__logo--pic {
+  width: 150px;
+  margin-top: 9px;
+}
+
 .header__location {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,7 +83,7 @@ li {
 .header__location > i {
   position: absolute;
   left: 100px;
-  top: 70px;
+  top: 60px;
   font-size: 1rem;
   z-index: 999;
 }

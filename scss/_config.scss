@@ -7,6 +7,10 @@ $primary--color: #9356DC;
 $secondary--color: #FF79DA;
 $tertiary--color: #99E2D0;
 
+//  Z INDEXS
+$z-index--top: 999;
+$z-index--bottom: 997;
+
 //  GRADIENTS
 @mixin main-gradient{
     background: linear-gradient(180deg, rgba(255,3,185,0.5) 0%, rgba(147,86,220,1) 100%);
@@ -94,6 +98,7 @@ $res--lastCell-margin-bot: 70px;
 //  RESTAURANTS IMAGE SIZES
 $res--img-width: 325px;
 $res--img-height: 180px;
+$menu--img-width: 375px;
 
 //  RESTAURANTS VIGNETTE NEW
 $vignette--new-radius: 4px;
@@ -133,6 +138,64 @@ $vignette--margin-left: 13.5rem;
 }
 @mixin res--border-radius-bottom {
     border-radius: 0 0 20px 20px;
+}
+
+//  MENUS MARGINS
+@mixin menus--top-border {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: 205px;
+}
+
+// DISPLAY FLEX COLUMN
+@mixin flex--column-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: $width--mobile;
+    height: auto;
+}
+
+// MENUS HEADING HEART
+@mixin menus--heading-heart {
+    font-size: 1.5rem;
+    font-weight: $font--basic;
+    position: absolute;
+    top: 15px;
+    right: -120px;
+}
+
+@mixin menus--heading-heart-adj {
+    font-size: 1.5rem;
+    font-weight: $font--basic;
+    position: absolute;
+    top: 15px;
+    right: -85px;
+}
+
+
+// MENUS H3 UNDERBAR
+@mixin menus--sub-bar {
+    content: "";
+    display: block;
+    margin-top: 7px;
+    width: 13%;
+    border-bottom: 3px solid $tertiary--color;
+}
+
+// MIXIN CTA BTN
+@mixin cta--btn {
+    font-family: $body--font;
+    font-weight: $font--bold;
+    font-size: $font--xsmall;
+    letter-spacing: $letter--spacing;
+    color: $alt--color;
+    @include main-gradient;
+    @include outter--shadow;
+    padding: $padding--mid;
+    border: 0;
+    border-radius: $radius--rounded;
+    cursor: pointer;
 }
 
 // FOOTER PADDINGS & MARGINS

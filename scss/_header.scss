@@ -10,6 +10,11 @@
         font-size: 2rem;
     }
 
+    &__logo--pic {
+        width: 150px;
+        margin-top: 9px;
+    }
+
     &__location{
         display: flex;
         margin-top: 5px;
@@ -31,7 +36,7 @@
         > i {
             position: absolute;
             left: 100px;
-            top: 70px;
+            top: 60px;
             font-size: 1rem;
             z-index: 999;
         }
@@ -55,17 +60,7 @@
             // @include outter--shadow;
         }
         &--btn {
-            font-family: $body--font;
-            font-weight: $font--bold;
-            font-size: $font--xsmall;
-            letter-spacing: $letter--spacing;
-            color: $alt--color;
-            @include main-gradient;
-            @include outter--shadow;
-            padding: $padding--mid;
-            border: 0;
-            border-radius: $radius--rounded;
-            cursor: pointer;
+            @include cta--btn;
         }
     }
 }
