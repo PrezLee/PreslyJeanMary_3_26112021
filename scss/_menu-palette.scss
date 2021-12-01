@@ -1,8 +1,9 @@
 .menus {
     @include flex--column-mobile;
+    width: $width--mobile;
     // background-image: url("/source/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-    background: url("./source/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-    background-size: $menu--img-width;
+    background: url("/source/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    // background-size: $menu--img-width;
     background-repeat: no-repeat;    
 
     &__content{
