@@ -160,7 +160,7 @@ $vignette--margin-left: 13.5rem;
 //  MENUS HEADER IMAGE
 @mixin menus--header-img {
     width: $width--mobile;
-    height: auto;
+    height: $width--mobile;
 }
 
 // MENUS HEADING HEART
