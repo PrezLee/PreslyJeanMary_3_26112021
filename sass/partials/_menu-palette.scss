@@ -1,7 +1,9 @@
+@use 'config' as *;
+
 .menus {
     @include flex--column-mobile;
-    background-image: url("/source/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-    background-size: $menu--img-width;
+    background-image: url(/source/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-size: contain;
     background-repeat: no-repeat;    
 
     &__content{
@@ -18,10 +20,14 @@
         &--title {
             font-family: $logo_title-font;
             font-size: 1.5rem;
+
+            &.adj {
+                margin-left: 50px;
+            }
         }
 
         &--heart {
-            @include menus--heading-heart;
+            @include menus--heading-heart-adj;
         }
     }
 

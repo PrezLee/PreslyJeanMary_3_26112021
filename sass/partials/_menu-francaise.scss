@@ -1,6 +1,8 @@
+@use 'config' as *;
+
 .menus {
     @include flex--column-mobile;
-    background-image: url("/source/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+    background-image: url("/source/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
     background-size: $menu--img-width;
     background-repeat: no-repeat;    
 
@@ -18,14 +20,10 @@
         &--title {
             font-family: $logo_title-font;
             font-size: 1.5rem;
-
-            &.adj {
-                margin-left: 50px;
-            }
         }
 
         &--heart {
-            @include menus--heading-heart-adj;
+            @include menus--heading-heart;
         }
     }
 

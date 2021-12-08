@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -33,26 +32,17 @@ li {
 
 .header {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   width: 375px;
   height: auto;
 }
-
 .header__back--btn {
   top: 15px;
   left: 30px;
   position: absolute;
 }
-
 .header__logo--pic {
   width: 150px;
   margin-top: 9px;
@@ -60,34 +50,19 @@ li {
 }
 
 .menus {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   width: 375px;
   height: auto;
   background-image: url("/source/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
   background-size: 375px;
   background-repeat: no-repeat;
 }
-
 .menus__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   width: 375px;
   height: auto;
   border-top-left-radius: 40px;
@@ -95,18 +70,15 @@ li {
   margin-top: 205px;
   background-color: #f7f7f7;
 }
-
 .menus__heading {
   position: relative;
   padding-top: 10px;
   margin: 20px 0 20px -140px;
 }
-
 .menus__heading--title {
   font-family: "Shrikhand";
   font-size: 1.5rem;
 }
-
 .menus__heading--heart {
   font-size: 1.5rem;
   font-weight: 300;
@@ -114,11 +86,9 @@ li {
   top: 15px;
   right: -120px;
 }
-
 .menus__cells {
   margin-bottom: 20px;
 }
-
 .menus__cells--heading {
   text-transform: uppercase;
   font-weight: 300;
@@ -126,7 +96,6 @@ li {
   padding-bottom: 7px;
   margin-bottom: 10px;
 }
-
 .menus__cells--heading::after {
   content: "";
   display: block;
@@ -134,7 +103,6 @@ li {
   width: 13%;
   border-bottom: 3px solid #99E2D0;
 }
-
 .menus__cell {
   position: relative;
   width: 325px;
@@ -142,52 +110,42 @@ li {
   background-color: #FFFFFF;
   border-radius: 15px;
   margin-bottom: 25px;
-  -webkit-box-shadow: -2px 5px 10px #d9d9d9;
-          box-shadow: -2px 5px 10px #d9d9d9;
+  box-shadow: -2px 5px 10px #d9d9d9;
 }
-
 .menus__cell--title {
   margin-left: 20px;
 }
-
 .menus__cell--title > i {
   color: gray;
   font-size: 1.2rem;
 }
-
 .menus__cell--title > i.fa-store {
   color: #9356DC;
 }
-
 .menus__cell--title > p {
   font-weight: 700;
   margin-left: -20px;
   margin-top: 0px;
 }
-
 .menus__cell--title > h4 {
   font-size: 0.85rem;
   font-weight: 300;
   margin-left: -20px;
   margin-top: 5px;
 }
-
 .menus__cell--price {
   position: absolute;
   bottom: 15px;
   right: 15px;
 }
-
 .menus__order--btn {
   font-family: "Roboto";
   font-weight: 500;
   font-size: 0.95rem;
   letter-spacing: 0.07rem;
   color: #FFFFFF;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 3, 185, 0.5)), to(#9356dc));
   background: linear-gradient(180deg, rgba(255, 3, 185, 0.5) 0%, #9356dc 100%);
-  -webkit-box-shadow: -2px 5px 10px #bfbfbf;
-          box-shadow: -2px 5px 10px #bfbfbf;
+  box-shadow: -2px 5px 10px #bfbfbf;
   padding: 17px;
   border: 0;
   border-radius: 28px;
@@ -204,37 +162,27 @@ li {
   padding-left: 30px;
   padding-bottom: 20px;
 }
-
 .footer__heading {
   font-family: "Shrikhand";
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
-
 .footer__links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .footer__links > a {
   color: #FFFFFF;
 }
-
 .footer__link {
   font-family: "Roboto";
   margin-bottom: 5px;
 }
-
 .footer__link--space {
   margin-left: 10px;
 }
-
 .footer__link--space.first {
   margin-left: 16px;
 }
+
 /*# sourceMappingURL=francaise.css.map */
