@@ -94,6 +94,9 @@ $res--title-margin-top: -3px;
 $res--title-margin-bot: 5px;
 $res--lastCell-margin-bot: 70px;
 
+// RESTAURANTS TITLE PROPERTIES
+$res--title-height: 72px;
+
 //  RESTAURANTS IMAGE SIZES
 $res--img-width: 325px;
 $res--img-height: 180px;
@@ -108,11 +111,15 @@ $vignette--margin-top: 1rem;
 $vignette--margin-left: 13.5rem;
 
 
-//  RESTAURANTS HEART POSITION
+//  RESTAURANTS HEART PROPERTIES
 @mixin heart--position {
-    position: relative;
-    top: -30px;
+    position: absolute;
+    top: 200px;
     left: 275px;
+}
+@mixin second--heart-color{
+    // color: radial-gradiant(circle, rgba(255,3,185,1) 0%, rgba(147,86,220,1) 100%);
+    color: radial-gradient($primary--color, $secondary--color);
 }
 
 //  RESTAURANTS IMAGE NEW VIGNETTE POSITION
@@ -203,6 +210,21 @@ $vignette--margin-left: 13.5rem;
     border-radius: $radius--rounded;
     cursor: pointer;
 }
+// MIXIN CTA BTN HOVER
+@mixin cta--btn-hover {
+    font-family: $body--font;
+    font-weight: $font--bold;
+    font-size: $font--xsmall;
+    letter-spacing: $letter--spacing;
+    color: $alt--color;
+    @include main-gradient;
+    @include outter--shadow-hover;
+    padding: $padding--mid;
+    border: 0;
+    border-radius: $radius--rounded;
+    cursor: pointer;
+}
+
 
 // FOOTER PADDINGS & MARGINS
 $footer--padding-20: 20px;
@@ -223,10 +245,10 @@ $footer--left-space: 10px;
 
 body{
     font-family: $body--font, sans-serif;
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
-    // display: flex;
-    // flex-direction: column;
+    display: flex;
+    flex-direction: column;
     overflow-x: hidden;
  }
 

@@ -24,6 +24,7 @@
     &__link {
         font-family: $body--font;
         margin-bottom: $cellMargin--bottom - 20;
+        width: fit-content;
 
         &--space {
             margin-left: $footer--left-space;

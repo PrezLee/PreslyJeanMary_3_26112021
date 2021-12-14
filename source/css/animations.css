@@ -1,0 +1,72 @@
+/* ANIMATIONS */
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* RESTAURANTS */
+.restaurants:first-child {
+  /*animation: apparition 1s ease 1;*/
+  animation: apparition 1s ease-in 1 normal forwards;
+}
+
+.restaurants:nth-child(3) {
+  /*animation: apparition 1s ease 1;*/
+  animation: apparition 1s ease-in 1 normal forwards;
+}
+
+.restaurants:nth-child(4) {
+  /*animation: apparition 1s ease 1;*/
+  animation: apparition 1s ease-in 1 normal forwards;
+}
+
+.restaurants:last-child {
+  /*animation: apparition 1s ease 1;*/
+  animation: apparition 1s ease-in 1 normal forwards;
+}
+
+/* HOVER TRANSITIONS */
+/* EXPLORE CALL TO ACTION */
+.header__explore--btn {
+  transform: scale(100%);
+  transition: 0.2s;
+}
+
+.header__explore--btn:hover {
+  opacity: 0.8;
+  transform: scale(98%);
+}
+
+/*.menus__order--btn {
+    transform: scale(100%);
+    transition: .2s;
+}
+.menus__order--btn:hover {
+    opacity: .8;
+    transform: scale(98%);
+}*/
+/* HOW IT WORKS*/
+.howItWorks__cell {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.howItWorks__cell:hover {
+  opacity: 0.6;
+}
+
+/* RESTAURANTS CARDS */
+.restaurants__cell {
+  transform: scale(100%);
+  transition: 0.2s;
+}
+
+.restaurants__cell:hover {
+  opacity: 0.8;
+  transform: scale(98%);
+}
+
+/*# sourceMappingURL=animations.css.map */

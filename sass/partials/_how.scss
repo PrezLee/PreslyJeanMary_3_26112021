@@ -19,6 +19,8 @@
         border-radius: $radius--squared;
         margin-bottom: $cellMargin--bottom;
         @include cellOutter--shadow;
+        box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 15%);
+        transition: 2s ease-in;
 
         &--title {
             margin-top: 5px;
@@ -53,6 +55,9 @@
             > p {
                 font-size: $font--xxsmall;
             }
+        }
+        &:hover {
+            box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 45%);
         }
     }
 }

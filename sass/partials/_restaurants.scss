@@ -19,6 +19,9 @@
         @include res--border-radius-top;
         @include res--border-radius-bottom;
         margin-bottom: $cellMargin--bottom;
+        // @include resOutter--shadow;
+        box-shadow: 0 5px 10px darken($color: $alt--color, $amount: 10%);
+        transition: 2s ease-in;
 
         img {
             width: $res--img-width;
@@ -35,8 +38,9 @@
             padding-left: $padding--small;
             padding-bottom: $padding--small - 25;
             background-color: $alt--color;
+            height: $res--title-height;
             @include res--border-radius-bottom;
-            @include resOutter--shadow;
+            // @include resOutter--shadow;
 
             > p {
                 font-weight: $font--extra-Bold;
@@ -51,6 +55,17 @@
         &--heart i {
             @include heart--position;
             font-size: $font--medium - 0.2;
+        }
+        &--heart-2 i {
+            @include heart--position;
+            font-size: $font--medium - 0.2;
+            opacity: 0;
+            // color: radial-gradiant(circle, rgba(255,3,185,1) 0%, rgba(147,86,220,1) 100%);
+            transition: all .5s ease;
+
+            &:hover {
+                opacity: 1;
+            }
         }
 
         &.new {
@@ -74,6 +89,10 @@
         }
         &.last {
             margin-bottom: $res--lastCell-margin-bot;
+        }
+
+        &:hover {
+            box-shadow: 0 5px 10px darken($color: $alt--color, $amount: 30%);
         }
     }
 }

@@ -1,4 +1,5 @@
 @use 'config' as *;
+@use '../animations' as *;
 
 .menus {
     @include flex--column-mobile;
@@ -92,5 +93,13 @@
         @include cta--btn;
         padding: 15px 50px;
         margin-bottom: 70px;
+
+        /*box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 25%);
+        transition: 2s ease-in;
+
+        &:hover {
+            box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 50%);
+            opacity: .8;
+        }*/
     }
 }
