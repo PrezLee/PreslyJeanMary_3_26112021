@@ -112,14 +112,19 @@ $vignette--margin-left: 13.5rem;
 
 
 //  RESTAURANTS HEART PROPERTIES
-@mixin heart--position {
+@mixin heart--position-svg {
     position: absolute;
-    top: 200px;
-    left: 275px;
+    top: 196px;
+    right: 25px;
+    width: 25px;
+    height: fit-content;
 }
-@mixin second--heart-color{
-    // color: radial-gradiant(circle, rgba(255,3,185,1) 0%, rgba(147,86,220,1) 100%);
-    color: radial-gradient($primary--color, $secondary--color);
+@mixin heartFilled--position-svg {
+    position: absolute;
+    top: 195px;
+    right: 24px;
+    width: 27px;
+    height: fit-content;
 }
 
 //  RESTAURANTS IMAGE NEW VIGNETTE POSITION
@@ -182,8 +187,8 @@ $vignette--margin-left: 13.5rem;
     font-size: 1.5rem;
     font-weight: $font--basic;
     position: absolute;
-    top: 15px;
-    right: -85px;
+    top: -180px;
+    right: -100px;
 }
 
 
@@ -210,21 +215,49 @@ $vignette--margin-left: 13.5rem;
     border-radius: $radius--rounded;
     cursor: pointer;
 }
-// MIXIN CTA BTN HOVER
-@mixin cta--btn-hover {
+// MIXIN CTA  RES PAGE
+@mixin res--cta--btn {
     font-family: $body--font;
     font-weight: $font--bold;
     font-size: $font--xsmall;
     letter-spacing: $letter--spacing;
     color: $alt--color;
     @include main-gradient;
-    @include outter--shadow-hover;
+    @include outter--shadow;
     padding: $padding--mid;
+    padding: 15px 50px;
+    margin-bottom: 70px;
     border: 0;
     border-radius: $radius--rounded;
     cursor: pointer;
 }
 
+// MIXIN CHECKED
+@mixin checked {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $tertiary--color;
+    top: -15px;
+    right: 50px;
+    // width: 70px;
+    height: 74px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transform: translateX(70px);
+    overflow: hidden;
+    opacity: 0;
+    transform-origin: right;
+
+    > i {
+        font-size: 1.5rem;
+        color: #FFFFFF;
+        transform-origin: center;
+        transform: rotate(0);
+        // transition: .5s ease;
+    }
+}
 
 // FOOTER PADDINGS & MARGINS
 $footer--padding-20: 20px;
@@ -246,7 +279,8 @@ $footer--left-space: 10px;
 body{
     font-family: $body--font, sans-serif;
     // width: 100vw;
-    height: 100vh;
+    // height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
@@ -269,3 +303,26 @@ body{
  li {
      list-style: none;
  }
+
+ .loading__anim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    height: 750px;
+    background: #FFF;
+    // border: solid 5px red;
+    position: fixed;
+    z-index: 1001;
+    // opacity: .5;
+
+    > p {
+        font-weight: $font--extra-Bold;
+        font-size: $font--medium;
+        position: absolute;  
+        transform: translateX(50%);
+        transform: translateY(50%);
+        // left: 50%;
+    }
+}

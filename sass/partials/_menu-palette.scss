@@ -27,16 +27,32 @@
             }
         }
 
-        &--heart {
+        &--heart, &--heart-2 {
             @include menus--heading-heart-adj;
+        }
+        &--heart svg {
+            @include heart--position-svg;
+            opacity: 1;
+        }
+
+        &--heart-2 svg {
+            @include heartFilled--position-svg;
+            opacity: 0;
+            transition: opacity .2s ease;
+
+            &:hover {
+                opacity: 1;
+            }
+            
         }
     }
 
     &__cells {
+        opacity: 0;
         margin-bottom: 20px;
+        animation: apparition 0.6s ease forwards;
     }
     &__cells--heading {
-        
         text-transform: uppercase;
         font-weight: $font--basic;
         font-size: $font--small;
@@ -55,12 +71,15 @@
         background-color: $alt--color;
         border-radius: $radius--squared;
         margin-bottom: $cellMargin--bottom;
+        cursor: pointer;
         @include cellOutter--shadow;
-
+        
         &--title {
-            // padding-top: 15px;
-            // margin-top: 5px;
-            margin-left: $cellTitle--left - 15; 
+            display: block;
+            padding: 0;
+            position: relative;
+            margin-left: $cellTitle--left - 15;
+            transition:  .5s ease;
             
             > i {
                 color: darken($color: $alt--color, $amount: 50%);
@@ -76,30 +95,99 @@
                 margin-top: $cellTitle--top + 20;
             }
 
+            > p:first-of-type {
+                width: 250px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                transition: all .3s ease;;
+            }
+
             > h4 {
                 font-size: $font--xxsmall;
                 font-weight: $font--basic;
                 margin-left: $cellTitle--left - 55;
                 margin-top: $cellTitle--top + 25;
+                width: 260px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                transition: all .3s ease;;
+            } 
+        
+            &:hover {
+                & > .menus__cell--checked i {
+                    animation: checkedAnim .5s ease 1 forwards normal;
+                    opacity: 1;
+                }
             }
         }
+        
         &--price {
             position: absolute;
-            bottom: 15px;
+            top: 0;
             right: 15px;
+            transition: all .3s ease;
         }
-    }
-    &__order--btn {
-        @include cta--btn;
-        padding: 15px 50px;
-        margin-bottom: 70px;
+        &--checked {
+            @include checked;
+            z-index: 2;
+        }
+        &:hover > .menus__cell--title > .menus__cell--checked i {
+            animation: checkedAnim .3s ease 1 forwards normal;
+        }
+        &:hover > .menus__cell--title > .menus__cell--checked {
+            animation: checkedApparition .3s ease 1 forwards;
+        }
+        &:hover > .menus__cell--title > .menus__cell--price {
+            transform: translateX(-45px);
+        }
+        &:hover > .menus__cell--title > p:first-of-type {
+            width: 200px; 
+        }
+        &:hover > .menus__cell--title > h4 {
+            width: 220px;
+        }
 
-        /*box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 25%);
-        transition: 2s ease-in;
+        &::before{
+            content:'';
+            position: absolute;
+            width: 0;
+            height: 74px;
+            top: 0;
+            right: 0;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background: $tertiary--color;
+            z-index: 2;
+            opacity: 0;
+            transform-origin: right;
+            transition: all .3s ease;
+        }
+        &:hover::before {
+            width: 70px;
+            opacity: 1;
+        }
+        
+        
+    }
+
+    &__order--btn {
+        animation: apparition 3s ease-in 1 normal forwards;
+        @include res--cta--btn;
+        box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 25%);
+        transition: opacity box-shadow 1s ease-in;
+        // transition: all 1s ease-in;
 
         &:hover {
             box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 50%);
-            opacity: .8;
-        }*/
+            // opacity: .8;
+        }
+    }
+}
+
+@for $i from 1 through 4 {
+    .menus__cells:nth-child(#{$i}){
+        animation-delay: #{$i * 0.6}s;
     }
 }

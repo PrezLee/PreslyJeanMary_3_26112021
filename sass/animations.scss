@@ -1,3 +1,13 @@
+/* WEBSITE LOADING */
+@keyframes siteVis {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 /* ANIMATIONS */
 @keyframes apparition {
     0% {
@@ -29,21 +39,20 @@
 
 /* EXPLORE CALL TO ACTION */
 .header__explore--btn {
-    transform: scale(100%);
-    transition: .2s;
+    opacity: 1;
+    transition: .6s;
 }
 .header__explore--btn:hover {
     opacity: .8;
-    transform: scale(98%);
 }
-/*.menus__order--btn {
-    transform: scale(100%);
-    transition: .2s;
+/* ORDER CALL TO ACTION */
+.menus__order--btn {
+    opacity: 1;
+    transition: .6s;
 }
 .menus__order--btn:hover {
     opacity: .8;
-    transform: scale(98%);
-}*/
+}
 
 /* HOW IT WORKS*/
 .howItWorks__cell {
@@ -56,10 +65,41 @@
 
 /* RESTAURANTS CARDS */
 .restaurants__cell {
-    transform: scale(100%);
-    transition: .2s;
+    opacity: 1;
+    transition: .6s;
 }
 .restaurants__cell:hover {
     opacity: .8;
-    transform: scale(98%);
+}
+/* CHCECKED MENUS CELL ANIMATION*/ 
+// CHECKED ANIMATION
+@keyframes checkedAnim {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes checkedApparition {
+    0% {
+        opacity: 0;
+        width: 0;
+        // transform: translateX(70px);
+    }
+    100% {
+        opacity: 1;
+        width: 70px;
+        // transform: translateX(0);
+    }
+}
+@keyframes checkedDisparition {
+    0% {
+        opacity: 1;
+        width: 70px;
+    }
+    100% {
+        opacity: 0;
+        width: 0;
+    }
 }

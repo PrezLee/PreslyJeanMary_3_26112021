@@ -22,6 +22,7 @@
         // @include resOutter--shadow;
         box-shadow: 0 5px 10px darken($color: $alt--color, $amount: 10%);
         transition: 2s ease-in;
+        position: relative;
 
         img {
             width: $res--img-width;
@@ -30,6 +31,7 @@
             @include res--border-radius-top;
             object-position: left center;
             object-fit: cover;
+            z-index: 998;
         }
 
         &--title {
@@ -52,24 +54,21 @@
             }
         }
 
-        &--heart i {
-            @include heart--position;
-            font-size: $font--medium - 0.2;
+        // 
+        &--heart svg {
+            @include heart--position-svg;
+            opacity: 1;
         }
-        &--heart-2 i {
-            @include heart--position;
-            font-size: $font--medium - 0.2;
+
+        &--heart-2 svg {
+            @include heartFilled--position-svg;
             opacity: 0;
-            // color: radial-gradiant(circle, rgba(255,3,185,1) 0%, rgba(147,86,220,1) 100%);
-            transition: all .5s ease;
+            transition: opacity .2s ease;
 
             &:hover {
                 opacity: 1;
             }
-        }
-
-        &.new {
-            position: relative;
+            
         }
 
         &.new::before {
@@ -95,4 +94,7 @@
             box-shadow: 0 5px 10px darken($color: $alt--color, $amount: 30%);
         }
     }
+    // &__cell:nth-child(4)--heart i{
+    //     border: solid 2px red;
+    // }
 }
