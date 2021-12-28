@@ -1,63 +1,325 @@
 @use 'config' as *;
 
-.howItWorks {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: $width--mobile;
-    height: auto;
-
-    &__heading {
-        padding-top: $padding--basic + 5;
-        margin: $margin--basic 0 $margin--basic $margin--neg;
-    }
-
-    &__cell {
-        width: $cell--width;
-        padding: $padding--cell;
-        background-color: darken($color: $alt--color, $amount: 6%);
-        border-radius: $radius--squared;
-        margin-bottom: $cellMargin--bottom;
-        @include cellOutter--shadow;
-        box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 15%);
-        transition: 2s ease-in;
-
-        &--title {
-            margin-top: 5px;
-            margin-left: $cellTitle--left - 15; 
-            > i {
-                color: darken($color: $alt--color, $amount: 50%);
-                font-size: $icon--size;
-                &.fa-store {
-                    color: $primary--color;
+@media screen and (max-width: 767px){
+    .howItWorks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: $width--mobile;
+        height: auto;
+    
+        &__heading {
+            padding-top: $padding--basic + 5;
+            margin: $margin--basic 0 $margin--basic $margin--neg;
+        }
+    
+        &__cell {
+            width: $cell--width;
+            padding: $padding--cell;
+            background-color: darken($color: $alt--color, $amount: 6%);
+            border-radius: $radius--squared;
+            margin-bottom: $cellMargin--bottom;
+            @include cellOutter--shadow;
+            box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 15%);
+            transition: 2s ease-in;
+    
+            &--title {
+                margin-top: 5px;
+                margin-left: $cellTitle--left - 15; 
+                > i {
+                    color: darken($color: $alt--color, $amount: 50%);
+                    font-size: $icon--size;
+                    &.fa-store {
+                        color: $primary--color;
+                    }
+                }
+    
+                > p {
+                    font-weight: $font--extra-Bold;
+                    margin-left: $cellTitle--left;
+                    margin-top: $cellTitle--top;
                 }
             }
-
-            > p {
-                font-weight: $font--extra-Bold;
-                margin-left: $cellTitle--left;
-                margin-top: $cellTitle--top;
+    
+            &--number {
+                width: $cellNumber--width;
+                height: $cellNumber--height;
+                background-color: $primary--color;
+                border-radius: $radius--cellNumber;
+                display: flex;
+                justify-content: center;
+                color: $alt--color;
+                padding: $padding--xsmall;
+                margin-top: $cellNumber--top;
+                margin-left: $cellNumber--left;
+    
+                > p {
+                    font-size: $font--xxsmall;
+                }
+            }
+            &:hover {
+                box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 45%);
             }
         }
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .howItWorks {
+        display: flex;
+        // position: relative;
+        // flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: $width--tablet;
+        height: auto;
+        margin-top: 20px;
+    
+        &__heading {
+            // padding-top: $padding--basic + 5;
+            // margin: $margin--basic 0 $margin--basic $margin--neg;
+            margin-bottom: $margin--basic;
+            // justify-self: center;
 
-        &--number {
-            width: $cellNumber--width;
-            height: $cellNumber--height;
-            background-color: $primary--color;
-            border-radius: $radius--cellNumber;
-            display: flex;
-            justify-content: center;
-            color: $alt--color;
-            padding: $padding--xsmall;
-            margin-top: $cellNumber--top;
-            margin-left: $cellNumber--left;
-
-            > p {
-                font-size: $font--xxsmall;
+        }
+        
+        &__cell {
+            width: $cell--width;
+            padding: $padding--cell;
+            background-color: darken($color: $alt--color, $amount: 6%);
+            border-radius: $radius--squared;
+            margin-bottom: $cellMargin--bottom;
+            @include cellOutter--shadow;
+            box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 15%);
+            transition: 2s ease-in;
+    
+            &--title {
+                margin-top: 5px;
+                margin-left: $cellTitle--left - 15; 
+                > i {
+                    color: darken($color: $alt--color, $amount: 50%);
+                    font-size: $icon--size;
+                    &.fa-store {
+                        color: $primary--color;
+                    }
+                }
+    
+                > p {
+                    font-weight: $font--extra-Bold;
+                    margin-left: $cellTitle--left;
+                    margin-top: $cellTitle--top;
+                }
+            }
+    
+            &--number {
+                width: $cellNumber--width;
+                height: $cellNumber--height;
+                background-color: $primary--color;
+                border-radius: $radius--cellNumber;
+                display: flex;
+                justify-content: center;
+                color: $alt--color;
+                padding: $padding--xsmall;
+                margin-top: $cellNumber--top;
+                margin-left: $cellNumber--left;
+    
+                > p {
+                    font-size: $font--xxsmall;
+                }
+            }
+            &:hover {
+                box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 45%);
             }
         }
-        &:hover {
-            box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 45%);
+        &__cell:nth-child(2){
+            position: absolute;
+            top: 450px;
+            left: 50px;
+        }
+        &__cell:nth-child(3){
+            position: absolute;
+            top: 450px;
+            left: 400px;
+        }
+        &__cell:nth-child(4){
+            position: absolute;
+            top: 550px;
+        }
+    }
+}
+@media screen and (min-width: 1024px){
+    .howItWorks {
+        display: flex;
+        // position: relative;
+        // flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: $width--desktop;
+        height: auto;
+        margin-top: 20px;
+    
+        &__heading {
+            // padding-top: $padding--basic + 5;
+            // margin: $margin--basic 0 $margin--basic $margin--neg;
+            margin-bottom: $margin--basic;
+            // justify-self: center;
+
+        }
+        
+        &__cell {
+            width: $cell--width;
+            padding: $padding--cell;
+            background-color: darken($color: $alt--color, $amount: 6%);
+            border-radius: $radius--squared;
+            margin-bottom: $cellMargin--bottom;
+            @include cellOutter--shadow;
+            box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 15%);
+            transition: 2s ease-in;
+    
+            &--title {
+                margin-top: 5px;
+                margin-left: $cellTitle--left - 15; 
+                > i {
+                    color: darken($color: $alt--color, $amount: 50%);
+                    font-size: $icon--size;
+                    &.fa-store {
+                        color: $primary--color;
+                    }
+                }
+    
+                > p {
+                    font-weight: $font--extra-Bold;
+                    margin-left: $cellTitle--left;
+                    margin-top: $cellTitle--top;
+                }
+            }
+    
+            &--number {
+                width: $cellNumber--width;
+                height: $cellNumber--height;
+                background-color: $primary--color;
+                border-radius: $radius--cellNumber;
+                display: flex;
+                justify-content: center;
+                color: $alt--color;
+                padding: $padding--xsmall;
+                margin-top: $cellNumber--top;
+                margin-left: $cellNumber--left;
+    
+                > p {
+                    font-size: $font--xxsmall;
+                }
+            }
+            &:hover {
+                box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 45%);
+            }
+        }
+        &__cell:nth-child(2){
+            position: absolute;
+            top: 450px;
+            // left: 50px;
+            left: 3%;
+        }
+        &__cell:nth-child(3){
+            position: absolute;
+            top: 450px;
+            // left: 420px;
+            left: 38%;
+        }
+        &__cell:nth-child(4){
+            position: absolute;
+            top: 450px;
+            // left: 780px;
+            left: 72%;
+        }
+    }
+}
+@media screen and (min-width: 1078px){
+    .howItWorks {
+        display: flex;
+        // position: relative;
+        // flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: $width--desktop;
+        height: auto;
+        margin-top: 20px;
+    
+        &__heading {
+            // padding-top: $padding--basic + 5;
+            // margin: $margin--basic 0 $margin--basic $margin--neg;
+            margin-bottom: $margin--basic;
+            // justify-self: center;
+
+        }
+        
+        &__cell {
+            width: $cell--width;
+            padding: $padding--cell;
+            background-color: darken($color: $alt--color, $amount: 6%);
+            border-radius: $radius--squared;
+            margin-bottom: $cellMargin--bottom;
+            @include cellOutter--shadow;
+            box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 15%);
+            transition: 2s ease-in;
+    
+            &--title {
+                margin-top: 5px;
+                margin-left: $cellTitle--left - 15; 
+                > i {
+                    color: darken($color: $alt--color, $amount: 50%);
+                    font-size: $icon--size;
+                    &.fa-store {
+                        color: $primary--color;
+                    }
+                }
+    
+                > p {
+                    font-weight: $font--extra-Bold;
+                    margin-left: $cellTitle--left;
+                    margin-top: $cellTitle--top;
+                }
+            }
+    
+            &--number {
+                width: $cellNumber--width;
+                height: $cellNumber--height;
+                background-color: $primary--color;
+                border-radius: $radius--cellNumber;
+                display: flex;
+                justify-content: center;
+                color: $alt--color;
+                padding: $padding--xsmall;
+                margin-top: $cellNumber--top;
+                margin-left: $cellNumber--left;
+    
+                > p {
+                    font-size: $font--xxsmall;
+                }
+            }
+            &:hover {
+                box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 45%);
+            }
+        }
+        &__cell:nth-child(2){
+            position: absolute;
+            top: 450px;
+            // left: 50px;
+            left: 10%;
+        }
+        &__cell:nth-child(3){
+            position: absolute;
+            top: 450px;
+            // left: 420px;
+            left: 38%;
+        }
+        &__cell:nth-child(4){
+            position: absolute;
+            top: 450px;
+            // left: 780px;
+            left: 66%;
         }
     }
 }

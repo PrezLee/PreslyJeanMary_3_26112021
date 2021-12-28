@@ -32,6 +32,9 @@ $z-index--bottom: 997;
 
 // WIDTH SIZES
 $width--mobile: 375px;
+$width--tablet: 768px;
+// $width--desktop: 1024px;
+$width--desktop: 100vw;
 
 // FONT-FAMILIES
 $logo_title-font: 'Shrikhand';
@@ -167,6 +170,31 @@ $vignette--margin-left: 13.5rem;
     width: $width--mobile;
     height: auto;
 }
+@mixin flex--column-tablet {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: $width--tablet;
+    height: 800px;
+    left: 100px;
+}
+@mixin flex--column-desktop {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: $width--desktop;
+    height: 800px;
+    left: 100px;
+}
+@mixin flex--column-desktop-hr {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: $width--desktop;
+    height: 700px;
+    left: 100px;
+}
+
 
 //  MENUS HEADER IMAGE
 @mixin menus--header-img {
