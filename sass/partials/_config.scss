@@ -338,19 +338,25 @@ body{
     align-items: center;
     position: relative;
     width: 100vw;
-    height: 750px;
+    height: 100vh;
     background: #FFF;
-    // border: solid 5px red;
     position: fixed;
     z-index: 1001;
-    // opacity: .5;
 
     > p {
-        font-weight: $font--extra-Bold;
+        font-weight: $font--basic;
         font-size: $font--medium;
         position: absolute;  
         transform: translateX(50%);
         transform: translateY(50%);
-        // left: 50%;
+        color: #888;
     }
 }
+.loading__anim p {
+    font-family: $body--font, sans-serif;
+    animation: loadingAnim 3s ease forwards;
+}
+.loading__anim {
+    animation: siteVis 1s ease 3.5s forwards;
+}
+

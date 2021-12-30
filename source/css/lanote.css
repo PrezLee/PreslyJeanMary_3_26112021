@@ -37,17 +37,27 @@ li {
   align-items: center;
   position: relative;
   width: 100vw;
-  height: 750px;
+  height: 100vh;
   background: #FFF;
   position: fixed;
   z-index: 1001;
 }
 .loading__anim > p {
-  font-weight: 700;
+  font-weight: 300;
   font-size: 1.5rem;
   position: absolute;
   transform: translateX(50%);
   transform: translateY(50%);
+  color: #888;
+}
+
+.loading__anim p {
+  font-family: "Roboto", sans-serif;
+  animation: loadingAnim 3s ease forwards;
+}
+
+.loading__anim {
+  animation: siteVis 1s ease 3.5s forwards;
 }
 
 .header {
@@ -72,14 +82,23 @@ li {
 /* WEBSITE LOADING */
 @keyframes siteVis {
   0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1001;
+  }
+}
+/* ANIMATIONS */
+@keyframes apparition {
+  0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
   }
 }
-/* ANIMATIONS */
-@keyframes apparition {
+@keyframes apparition__All {
   0% {
     opacity: 0;
   }
@@ -176,6 +195,26 @@ li {
   100% {
     opacity: 0;
     width: 0;
+  }
+}
+@keyframes loadingAnim {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @media screen and (max-width: 767px) {
@@ -907,7 +946,7 @@ li {
     min-width: 100vw;
   }
   .header__back--btn {
-    left: 540px;
+    left: 430px;
   }
 
   .menus {
@@ -1095,17 +1134,17 @@ li {
   }
   .menus__cells.entry {
     margin-left: 7%;
-    transform: translateY(78px);
+    transform: translateY(70px);
     left: -250px;
   }
   .menus__cells.main--dish {
     margin-left: 7%;
-    transform: translateY(30px);
+    transform: translateY(25px);
     left: 250px;
   }
   .menus__cells.desert {
     margin-left: 7%;
-    transform: translateY(40px);
+    transform: translateY(30px);
     left: -250px;
   }
   .menus__cells--heading {
@@ -1160,7 +1199,7 @@ li {
     min-width: 100vw;
   }
   .header__back--btn {
-    left: 540px;
+    left: 430px;
   }
 
   .menus {
@@ -1348,17 +1387,17 @@ li {
   }
   .menus__cells.entry {
     margin-left: 7%;
-    transform: translateY(60px);
+    transform: translateY(70px);
     left: -250px;
   }
   .menus__cells.main--dish {
     margin-left: 7%;
-    transform: translateY(40px);
+    transform: translateY(25px);
     left: 250px;
   }
   .menus__cells.desert {
     margin-left: 7%;
-    transform: translateY(35px);
+    transform: translateY(30px);
     left: -250px;
   }
   .menus__cells--heading {

@@ -178,11 +178,9 @@
             @include res--cta--btn;
             box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 25%);
             transition: opacity box-shadow 1s ease-in;
-            // transition: all 1s ease-in;
     
             &:hover {
                 box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 50%);
-                // opacity: .8;
             }
         }
     }
@@ -202,17 +200,12 @@
         background-image: url('../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
         background-size: contain;
         background-repeat: no-repeat;    
-        // position: relative;
         width: $width--tablet;
-        // justify-content: center;
-        // align-items: center;
     
         &__content{
             @include flex--column-tablet;
             @include menus--top-border;
             background-color: darken($color: $alt--color, $amount: 3%);
-            // position: absolute;
-            // height: fit-content;
         }
     
         &__heading {
@@ -385,7 +378,6 @@
             height: fit-content;
             padding-bottom: 7px;
             margin-bottom: 10px;
-            // top: -100px;
             
             &::after {
                 @include menus--sub-bar;
@@ -405,7 +397,6 @@
     
             &:hover {
                 box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 50%);
-                // opacity: .8;
             }
         }
     }
@@ -429,17 +420,12 @@
         background-image: url('../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
         background-size: contain;
         background-repeat: no-repeat;    
-        // position: relative;
         min-width: $width--desktop;
-        // justify-content: center;
-        // align-items: center;
     
         &__content{
             @include flex--column-desktop;
             @include menus--top-border;
             background-color: darken($color: $alt--color, $amount: 3%);
-            // position: absolute;
-            // height: fit-content;
         }
     
         &__heading {
@@ -632,7 +618,6 @@
     
             &:hover {
                 box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 50%);
-                // opacity: .8;
             }
         }
     }
@@ -648,7 +633,7 @@
         min-width: $width--desktop;
 
         &__back--btn {
-            left: 540px;
+            left: 430px;
         }
     }
     .menus {
@@ -656,17 +641,12 @@
         background-image: url('../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
         background-size: contain;
         background-repeat: no-repeat; 
-        // position: relative;
         min-width: $width--desktop;
-        // justify-content: center;
-        // align-items: center;
     
         &__content {
             @include flex--column-desktop;
             @include menus--top-border;
             background-color: darken($color: $alt--color, $amount: 3%);
-            // position: absolute;
-            // height: fit-content;
         }
     
         &__heading {
@@ -859,7 +839,6 @@
     
             &:hover {
                 box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 50%);
-                // opacity: .8;
             }
         }
     }
@@ -875,7 +854,7 @@
         min-width: $width--desktop;
 
         &__back--btn {
-            left: 540px;
+            left: 430px;
         }
     }
     .menus {
@@ -883,17 +862,12 @@
         background-image: url('../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
         background-size: contain;
         background-repeat: no-repeat; 
-        // position: relative;
         min-width: $width--desktop;
-        // justify-content: center;
-        // align-items: center;
     
         &__content{
             @include flex--column-desktop;
             @include menus--top-border;
             background-color: darken($color: $alt--color, $amount: 3%);
-            // position: absolute;
-            // height: fit-content;
         }
     
         &__heading {
@@ -1086,7 +1060,6 @@
     
             &:hover {
                 box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 50%);
-                // opacity: .8;
             }
         }
     }

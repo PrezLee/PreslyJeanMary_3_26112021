@@ -1,10 +1,11 @@
 /* WEBSITE LOADING */
 @keyframes siteVis {
     0% {
-        opacity: 0;
+        opacity: 1;
     }
     100% {
-        opacity: 1;
+        opacity: 0;
+        z-index: -1001;
     }
 }
 
@@ -17,7 +18,14 @@
         opacity: 1;
     }
 }
-
+@keyframes apparition__All {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 /* RESTAURANTS */
 .restaurants:first-child {
     /*animation: apparition 1s ease 1;*/
@@ -101,5 +109,26 @@
     100% {
         opacity: 0;
         width: 0;
+    }
+}
+
+@keyframes loadingAnim {
+    0% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }

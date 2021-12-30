@@ -178,11 +178,9 @@
             @include res--cta--btn;
             box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 25%);
             transition: opacity box-shadow 1s ease-in;
-            // transition: all 1s ease-in;
     
             &:hover {
                 box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 50%);
-                // opacity: .8;
             }
         }
     }
@@ -202,17 +200,12 @@
         background-image: url('../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg');
         background-size: contain;
         background-repeat: no-repeat;    
-        // position: relative;
         width: $width--tablet;
-        // justify-content: center;
-        // align-items: center;
     
         &__content{
             @include flex--column-tablet;
             @include menus--top-border;
             background-color: darken($color: $alt--color, $amount: 3%);
-            // position: absolute;
-            // height: fit-content;
         }
     
         &__heading {
@@ -385,7 +378,6 @@
             height: fit-content;
             padding-bottom: 7px;
             margin-bottom: 10px;
-            // top: -100px;
             
             &::after {
                 @include menus--sub-bar;
@@ -405,7 +397,6 @@
     
             &:hover {
                 box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 50%);
-                // opacity: .8;
             }
         }
     }
@@ -429,17 +420,12 @@
         background-image: url('../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg');
         background-size: cover;
         background-repeat: no-repeat;    
-        // position: relative;
         min-width: $width--desktop;
-        // justify-content: center;
-        // align-items: center;
     
         &__content{
             @include flex--column-desktop;
             @include menus--top-border;
             background-color: darken($color: $alt--color, $amount: 3%);
-            // position: absolute;
-            // height: fit-content;
         }
     
         &__heading {
@@ -632,7 +618,6 @@
     
             &:hover {
                 box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 50%);
-                // opacity: .8;
             }
         }
     }
@@ -648,7 +633,7 @@
         min-width: $width--desktop;
 
         &__back--btn {
-            left: 540px;
+            left: 430px;
         }
     }
     .menus {
@@ -656,17 +641,12 @@
         background-image: url('../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg');
         background-size: cover;
         background-repeat: no-repeat; 
-        // position: relative;
         min-width: $width--desktop;
-        // justify-content: center;
-        // align-items: center;
     
         &__content {
             @include flex--column-desktop;
             @include menus--top-border;
             background-color: darken($color: $alt--color, $amount: 3%);
-            // position: absolute;
-            // height: fit-content;
         }
     
         &__heading {
@@ -819,17 +799,17 @@
 
         &__cells.entry {
             margin-left: 7%;
-            transform: translateY(78px);
+            transform: translateY(70px);
             left: -250px;
         }
         &__cells.main--dish {
             margin-left: 7%;
-            transform: translateY(30px);
+            transform: translateY(25px);
             left: 250px;
         }
         &__cells.desert {
             margin-left: 7%;
-            transform: translateY(40px);
+            transform: translateY(30px);
             left: -250px;
         }
 
@@ -859,7 +839,6 @@
     
             &:hover {
                 box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 50%);
-                // opacity: .8;
             }
         }
     }
@@ -875,7 +854,7 @@
         min-width: $width--desktop;
 
         &__back--btn {
-            left: 540px;
+            left: 430px;
         }
     }
     .menus {
@@ -883,17 +862,12 @@
         background-image: url('../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg');
         background-size: cover;
         background-repeat: no-repeat; 
-        // position: relative;
         min-width: $width--desktop;
-        // justify-content: center;
-        // align-items: center;
     
         &__content{
             @include flex--column-desktop;
             @include menus--top-border;
             background-color: darken($color: $alt--color, $amount: 3%);
-            // position: absolute;
-            // height: fit-content;
         }
     
         &__heading {
@@ -1046,17 +1020,17 @@
 
         &__cells.entry {
             margin-left: 7%;
-            transform: translateY(60px);
+            transform: translateY(70px);
             left: -250px;
         }
         &__cells.main--dish {
             margin-left: 7%;
-            transform: translateY(40px);
+            transform: translateY(25px);
             left: 250px;
         }
         &__cells.desert {
             margin-left: 7%;
-            transform: translateY(35px);
+            transform: translateY(30px);
             left: -250px;
         }
 
@@ -1086,7 +1060,6 @@
     
             &:hover {
                 box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 50%);
-                // opacity: .8;
             }
         }
     }
@@ -1110,17 +1083,12 @@
         background-image: url('../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg');
         background-size: cover;
         background-repeat: no-repeat; 
-        // position: relative;
         min-width: $width--desktop;
-        // justify-content: center;
-        // align-items: center;
     
         &__content{
             @include flex--column-desktop-hr;
             @include menus--top-border;
             background-color: darken($color: $alt--color, $amount: 3%);
-            // position: absolute;
-            // height: fit-content;
         }
     
         &__heading {
@@ -1313,7 +1281,6 @@
     
             &:hover {
                 box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 50%);
-                // opacity: .8;
             }
         }
     }
@@ -1327,4 +1294,3 @@
         animation-delay: #{$i * 0.6}s;
     }
 }
-// background-image: url('../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg');
