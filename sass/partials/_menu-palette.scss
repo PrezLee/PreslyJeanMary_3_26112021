@@ -154,21 +154,22 @@
                 content:'';
                 position: absolute;
                 width: 0;
-                height: 74px;
+                // height: 71px;
                 top: 0;
                 right: 0;
                 border-top-right-radius: 10px;
                 border-bottom-right-radius: 10px;
-                background: $tertiary--color;
+                // background: $tertiary--color;
                 z-index: 2;
                 opacity: 0;
                 transform-origin: right;
                 transition: all .3s ease;
             }
-            &:hover::before {
+            /*&:hover::before {
                 width: 70px;
+                height: 71px;
                 opacity: 1;
-            }
+            }*/
             
             
         }
@@ -177,7 +178,7 @@
             animation: apparition 3s ease-in 1 normal forwards;
             @include res--cta--btn;
             box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 25%);
-            transition: opacity box-shadow 1s ease-in;
+            transition: opacity /*box-shadow*/ 1s ease-in;
     
             &:hover {
                 box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 50%);
@@ -339,7 +340,7 @@
                 content:'';
                 position: absolute;
                 width: 0;
-                height: 74px;
+                height: 71px;
                 top: 0;
                 right: 0;
                 border-top-right-radius: 10px;
@@ -390,7 +391,7 @@
             animation: apparition 3s ease-in 1 normal forwards;
             @include res--cta--btn;
             box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 25%);
-            transition: opacity box-shadow 1s ease-in;
+            transition: opacity /*box-shadow*/ 1s ease-in;
             position: absolute;
             left: 450px;
             top: 760px;
@@ -559,7 +560,7 @@
                 content:'';
                 position: absolute;
                 width: 0;
-                height: 74px;
+                height: 71px;
                 top: 0;
                 right: 0;
                 border-top-right-radius: 10px;
@@ -611,7 +612,7 @@
             animation: apparition 3s ease-in 1 normal forwards;
             @include res--cta--btn;
             box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 25%);
-            transition: opacity box-shadow 1s ease-in;
+            transition: opacity /*box-shadow*/ 1s ease-in;
             position: absolute;
             left: 450px;
             top: 760px;
@@ -780,7 +781,7 @@
                 content:'';
                 position: absolute;
                 width: 0;
-                height: 74px;
+                height: 71px;
                 top: 0;
                 right: 0;
                 border-top-right-radius: 10px;
@@ -832,7 +833,7 @@
             animation: apparition 3s ease-in 1 normal forwards;
             @include res--cta--btn;
             box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 25%);
-            transition: opacity box-shadow 1s ease-in;
+            transition: opacity /*box-shadow*/ 1s ease-in;
             position: absolute;
             left: 520px;
             top: 760px;
@@ -1001,7 +1002,7 @@
                 content:'';
                 position: absolute;
                 width: 0;
-                height: 74px;
+                height: 71px;
                 top: 0;
                 right: 0;
                 border-top-right-radius: 10px;
@@ -1053,7 +1054,7 @@
             animation: apparition 3s ease-in 1 normal forwards;
             @include res--cta--btn;
             box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 25%);
-            transition: opacity box-shadow 1s ease-in;
+            transition: opacity /*box-shadow*/ 1s ease-in;
             position: absolute;
             left: 580px;
             top: 760px;
@@ -1227,7 +1228,7 @@
                 content:'';
                 position: absolute;
                 width: 0;
-                height: 74px;
+                height: 71px;
                 top: 0;
                 right: 0;
                 border-top-right-radius: 10px;
@@ -1279,7 +1280,7 @@
             animation: apparition 3s ease-in 1 normal forwards;
             @include res--cta--btn;
             box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 25%);
-            transition: opacity box-shadow 1s ease-in;
+            transition: opacity /*box-shadow*/ 1s ease-in;
             position: absolute;
             left: 580px;
             top: 760px;

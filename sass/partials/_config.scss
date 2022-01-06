@@ -60,6 +60,7 @@ $margin--neg: -200px;
 
 
 //  PADDINGS
+$padding--xxsmall: 0;
 $padding--xsmall: 5px;
 $padding--small: 10px;
 $padding--mid: 17px;
@@ -143,16 +144,18 @@ $vignette--margin-left: 13.5rem;
 }
 @mixin vignetteOutter--shadow {
     // box-shadow: -2px 5px 10px darken($color: $alt--color, $amount: 90%);
-    box-shadow: -90deg 5px 10px lighten($color: $alt--color-dark, $amount: 50%);
+    box-shadow: 2px 2px 10px lighten($color: $alt--color-dark, $amount: 20%);
 }
 
 
 //  RESTAURANTS CELL BORDERS
 @mixin res--border-radius-top {
-    border-radius: 20px 20px 0 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 @mixin res--border-radius-bottom {
-    border-radius: 0 0 20px 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 //  MENUS MARGINS
@@ -268,9 +271,9 @@ $vignette--margin-left: 13.5rem;
     align-items: center;
     background: $tertiary--color;
     top: -15px;
-    right: 50px;
+    right: 55px;
     // width: 70px;
-    height: 74px;
+    height: 71px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     transform: translateX(70px);

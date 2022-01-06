@@ -654,8 +654,10 @@ li {
     margin: 20px 0 20px -218px;
   }
   .restaurants__cell {
-    border-radius: 20px 20px 0 0;
-    border-radius: 0 0 20px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     margin-bottom: 25px;
     box-shadow: 0 5px 10px #e6e6e6;
     transition: 2s ease-in;
@@ -665,7 +667,8 @@ li {
     width: 325px;
     height: 180px;
     background-size: 100% 100%;
-    border-radius: 20px 20px 0 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     object-position: left center;
     object-fit: cover;
     z-index: 998;
@@ -674,10 +677,11 @@ li {
     margin-top: -3px;
     padding-top: 13px;
     padding-left: 10px;
-    padding-bottom: -15px;
+    padding-bottom: 0;
     background-color: #FFFFFF;
     height: 72px;
-    border-radius: 0 0 20px 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
   .restaurants__cell--title > p {
     font-weight: 700;
@@ -714,7 +718,7 @@ li {
     height: 30px;
     border-radius: 4px;
     background-color: #99E2D0;
-    box-shadow: -90deg 5px 10px gray;
+    box-shadow: 2px 2px 10px #333333;
     margin-top: 1rem;
     margin-left: 13.5rem;
     font-size: 0.95rem;
@@ -747,8 +751,10 @@ li {
     left: 35px;
   }
   .restaurants__cell {
-    border-radius: 20px 20px 0 0;
-    border-radius: 0 0 20px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     margin-bottom: 25px;
     box-shadow: 0 5px 10px #e6e6e6;
     transition: 2s ease-in;
@@ -758,7 +764,8 @@ li {
     width: 325px;
     height: 180px;
     background-size: 100% 100%;
-    border-radius: 20px 20px 0 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     object-position: left center;
     object-fit: cover;
     z-index: 998;
@@ -767,10 +774,11 @@ li {
     margin-top: -3px;
     padding-top: 13px;
     padding-left: 10px;
-    padding-bottom: -15px;
+    padding-bottom: 0;
     background-color: #FFFFFF;
     height: 72px;
-    border-radius: 0 0 20px 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
   .restaurants__cell--title > p {
     font-weight: 700;
@@ -807,7 +815,7 @@ li {
     height: 30px;
     border-radius: 4px;
     background-color: #99E2D0;
-    box-shadow: -90deg 5px 10px gray;
+    box-shadow: 2px 2px 10px #333333;
     margin-top: 1rem;
     margin-left: 13.5rem;
     font-size: 0.95rem;
@@ -856,8 +864,9 @@ li {
     left: 45%;
   }
   .restaurants__cell {
-    border-radius: 20px 20px 0 0;
-    border-radius: 0 0 20px 20px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     margin-bottom: 25px;
     box-shadow: 0 5px 10px #e6e6e6;
     transition: 2s ease-in;
@@ -867,7 +876,8 @@ li {
     width: 325px;
     height: 180px;
     background-size: 100% 100%;
-    border-radius: 20px 20px 0 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     object-position: left center;
     object-fit: cover;
     z-index: 998;
@@ -876,10 +886,11 @@ li {
     margin-top: -3px;
     padding-top: 13px;
     padding-left: 10px;
-    padding-bottom: -15px;
+    padding-bottom: 0;
     background-color: #FFFFFF;
     height: 72px;
-    border-radius: 0 0 20px 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
   .restaurants__cell--title > p {
     font-weight: 700;
@@ -916,7 +927,7 @@ li {
     height: 30px;
     border-radius: 4px;
     background-color: #99E2D0;
-    box-shadow: -90deg 5px 10px gray;
+    box-shadow: 2px 2px 10px #333333;
     margin-top: 1rem;
     margin-left: 13.5rem;
     font-size: 0.95rem;
@@ -965,8 +976,10 @@ li {
     left: 45%;
   }
   .restaurants__cell {
-    border-radius: 20px 20px 0 0;
-    border-radius: 0 0 20px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     margin-bottom: 25px;
     box-shadow: 0 5px 10px #e6e6e6;
     transition: 2s ease-in;
@@ -976,7 +989,8 @@ li {
     width: 325px;
     height: 180px;
     background-size: 100% 100%;
-    border-radius: 20px 20px 0 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     object-position: left center;
     object-fit: cover;
     z-index: 998;
@@ -985,10 +999,11 @@ li {
     margin-top: -3px;
     padding-top: 13px;
     padding-left: 10px;
-    padding-bottom: -15px;
+    padding-bottom: 0;
     background-color: #FFFFFF;
     height: 72px;
-    border-radius: 0 0 20px 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
   .restaurants__cell--title > p {
     font-weight: 700;
@@ -1025,7 +1040,7 @@ li {
     height: 30px;
     border-radius: 4px;
     background-color: #99E2D0;
-    box-shadow: -90deg 5px 10px gray;
+    box-shadow: 2px 2px 10px #333333;
     margin-top: 1rem;
     margin-left: 13.5rem;
     font-size: 0.95rem;

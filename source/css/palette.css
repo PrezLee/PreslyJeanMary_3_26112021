@@ -306,6 +306,11 @@ li {
     margin-bottom: 25px;
     cursor: pointer;
     box-shadow: -2px 5px 10px #d9d9d9;
+    /*&:hover::before {
+        width: 70px;
+        height: 71px;
+        opacity: 1;
+    }*/
   }
   .menus__cell--title {
     display: block;
@@ -361,8 +366,8 @@ li {
     align-items: center;
     background: #99E2D0;
     top: -15px;
-    right: 50px;
-    height: 74px;
+    right: 55px;
+    height: 71px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     transform: translateX(70px);
@@ -396,20 +401,14 @@ li {
     content: "";
     position: absolute;
     width: 0;
-    height: 74px;
     top: 0;
     right: 0;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    background: #99E2D0;
     z-index: 2;
     opacity: 0;
     transform-origin: right;
     transition: all 0.3s ease;
-  }
-  .menus__cell:hover::before {
-    width: 70px;
-    opacity: 1;
   }
   .menus__order--btn {
     animation: apparition 3s ease-in 1 normal forwards;
@@ -427,7 +426,7 @@ li {
     border-radius: 28px;
     cursor: pointer;
     box-shadow: -2px 5px 10px #bfbfbf;
-    transition: opacity box-shadow 1s ease-in;
+    transition: opacity 1s ease-in;
   }
   .menus__order--btn:hover {
     box-shadow: -2px 5px 10px gray;
@@ -576,8 +575,8 @@ li {
     align-items: center;
     background: #99E2D0;
     top: -15px;
-    right: 50px;
-    height: 74px;
+    right: 55px;
+    height: 71px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     transform: translateX(70px);
@@ -611,7 +610,7 @@ li {
     content: "";
     position: absolute;
     width: 0;
-    height: 74px;
+    height: 71px;
     top: 0;
     right: 0;
     border-top-right-radius: 10px;
@@ -672,7 +671,7 @@ li {
     border-radius: 28px;
     cursor: pointer;
     box-shadow: -2px 5px 10px #bfbfbf;
-    transition: opacity box-shadow 1s ease-in;
+    transition: opacity 1s ease-in;
     position: absolute;
     left: 450px;
     top: 760px;
@@ -829,8 +828,8 @@ li {
     align-items: center;
     background: #99E2D0;
     top: -15px;
-    right: 50px;
-    height: 74px;
+    right: 55px;
+    height: 71px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     transform: translateX(70px);
@@ -864,7 +863,7 @@ li {
     content: "";
     position: absolute;
     width: 0;
-    height: 74px;
+    height: 71px;
     top: 0;
     right: 0;
     border-top-right-radius: 10px;
@@ -925,7 +924,7 @@ li {
     border-radius: 28px;
     cursor: pointer;
     box-shadow: -2px 5px 10px #bfbfbf;
-    transition: opacity box-shadow 1s ease-in;
+    transition: opacity 1s ease-in;
     position: absolute;
     left: 450px;
     top: 760px;
@@ -1082,8 +1081,8 @@ li {
     align-items: center;
     background: #99E2D0;
     top: -15px;
-    right: 50px;
-    height: 74px;
+    right: 55px;
+    height: 71px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     transform: translateX(70px);
@@ -1117,7 +1116,7 @@ li {
     content: "";
     position: absolute;
     width: 0;
-    height: 74px;
+    height: 71px;
     top: 0;
     right: 0;
     border-top-right-radius: 10px;
@@ -1178,7 +1177,7 @@ li {
     border-radius: 28px;
     cursor: pointer;
     box-shadow: -2px 5px 10px #bfbfbf;
-    transition: opacity box-shadow 1s ease-in;
+    transition: opacity 1s ease-in;
     position: absolute;
     left: 520px;
     top: 760px;
@@ -1335,8 +1334,8 @@ li {
     align-items: center;
     background: #99E2D0;
     top: -15px;
-    right: 50px;
-    height: 74px;
+    right: 55px;
+    height: 71px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     transform: translateX(70px);
@@ -1370,7 +1369,7 @@ li {
     content: "";
     position: absolute;
     width: 0;
-    height: 74px;
+    height: 71px;
     top: 0;
     right: 0;
     border-top-right-radius: 10px;
@@ -1431,7 +1430,7 @@ li {
     border-radius: 28px;
     cursor: pointer;
     box-shadow: -2px 5px 10px #bfbfbf;
-    transition: opacity box-shadow 1s ease-in;
+    transition: opacity 1s ease-in;
     position: absolute;
     left: 580px;
     top: 760px;
@@ -1588,8 +1587,8 @@ li {
     align-items: center;
     background: #99E2D0;
     top: -15px;
-    right: 50px;
-    height: 74px;
+    right: 55px;
+    height: 71px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     transform: translateX(70px);
@@ -1623,7 +1622,7 @@ li {
     content: "";
     position: absolute;
     width: 0;
-    height: 74px;
+    height: 71px;
     top: 0;
     right: 0;
     border-top-right-radius: 10px;
@@ -1684,7 +1683,7 @@ li {
     border-radius: 28px;
     cursor: pointer;
     box-shadow: -2px 5px 10px #bfbfbf;
-    transition: opacity box-shadow 1s ease-in;
+    transition: opacity 1s ease-in;
     position: absolute;
     left: 580px;
     top: 760px;

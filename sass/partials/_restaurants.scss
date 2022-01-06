@@ -39,7 +39,7 @@
                 margin-top: $res--title-margin-top;
                 padding-top: $padding--small + 3;
                 padding-left: $padding--small;
-                padding-bottom: $padding--small - 25;
+                padding-bottom: $padding--xxsmall;
                 background-color: $alt--color;
                 height: $res--title-height;
                 @include res--border-radius-bottom;
@@ -145,7 +145,7 @@
                 margin-top: $res--title-margin-top;
                 padding-top: $padding--small + 3;
                 padding-left: $padding--small;
-                padding-bottom: $padding--small - 25;
+                padding-bottom: $padding--xxsmall;
                 background-color: $alt--color;
                 height: $res--title-height;
                 @include res--border-radius-bottom;
@@ -240,7 +240,9 @@
     
         &__cell {
             // @include resOutter--shadow;
-            @include res--border-radius-top;
+            // @include res--border-radius-top;
+            border-top-left-radius: 50%;
+            // border: solid blue 1px;
             @include res--border-radius-bottom;
             margin-bottom: $cellMargin--bottom;
             // @include resOutter--shadow;
@@ -262,7 +264,7 @@
                 margin-top: $res--title-margin-top;
                 padding-top: $padding--small + 3;
                 padding-left: $padding--small;
-                padding-bottom: $padding--small - 25;
+                padding-bottom: $padding--xxsmall;
                 background-color: $alt--color;
                 height: $res--title-height;
                 @include res--border-radius-bottom;
@@ -380,7 +382,7 @@
                 margin-top: $res--title-margin-top;
                 padding-top: $padding--small + 3;
                 padding-left: $padding--small;
-                padding-bottom: $padding--small - 25;
+                padding-bottom: $padding--xxsmall;
                 background-color: $alt--color;
                 height: $res--title-height;
                 @include res--border-radius-bottom;
